@@ -67,4 +67,4 @@ console.log("19)",birthplace)
 // 20. Distance between two cities: 200.5
 let distance:number= 200.5
 console.log("20)The distance is:",distance)
-
+ //assignment1 completed 
