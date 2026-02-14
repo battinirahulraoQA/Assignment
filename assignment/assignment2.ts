@@ -63,7 +63,6 @@ function checkLoanEligibility(customer:customerDetails){        //creating a fun
     else if(customer.creditScore < 650){
         console.log(`${customer.customerName},Your loan is denied`)
     }
-
     else if (customer.creditScore >= 650 && customer.creditScore <=750){
         console.log("Doing additonal Check ");
         if(customer.income <= 50000)
@@ -90,3 +89,8 @@ function checkLoanEligibility(customer:customerDetails){        //creating a fun
 checkLoanEligibility(customerData1)    //calling the function by passing the object as argument
 checkLoanEligibility(customerData2)    //calling the function by passing the object as argument
 
+let age = 20;
+
+if (age >= 18) {
+  console.log("You are an adult");
+}
