@@ -1,9 +1,7 @@
 /*Assignment (Conditional Statements & Loops)
 
 Employee Table
-S.No Name Base Salary Experience (Years) Year-End Rating (Out of
-
-5)
+S.No Name Base Salary Experience (Years) Year-End Rating (Out of 5)
 
 1Alice Johnson 75000.0 5.1 4.2
 2 Bob Smith 68000.0 3.2 3.8
@@ -61,13 +59,12 @@ function getReward(exp:number):number{
 
 console.log(getReward(1))
 
-// 5) Hike Calculation Function
 function calculateHike(emp: Emp): number {
 
     let payDetails = variablePayAndBonus(emp.Rating);
     let reward = getReward(emp.Experience);
 
-    // Convert percentage to decimal
+
     let variableAmount = emp.BaseSalary * (payDetails.variable / 100);
 
     let hike = variableAmount + payDetails.bonus + reward;
@@ -77,8 +74,6 @@ function calculateHike(emp: Emp): number {
     return hikePercent;
 }
 
-
-// 6) Store in Map
 let hikeMap = new Map<string, number>();
 
 for (let emp of empDetail1) {
@@ -86,8 +81,6 @@ for (let emp of empDetail1) {
     hikeMap.set(emp.Name, percent);
 }
 
-
-// 7) Print Output
 for (let [name, percent] of hikeMap) {
     console.log(`${name} → Hike %: ${(percent * 100).toFixed(2)}%`);
 }
